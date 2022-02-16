@@ -1,3 +1,5 @@
+// capitalise strings method
+
 const capitalise = Object.defineProperty(String.prototype, 'capitalise', {
     value: function () {
         return this[0].toUpperCase() + this.slice(1);
@@ -6,6 +8,7 @@ const capitalise = Object.defineProperty(String.prototype, 'capitalise', {
     configurable: true // so that it can be deleted later
 });
 
+// validate email address method
 const validateEmail = (email) => {
     return String(email)
       .toLowerCase()
