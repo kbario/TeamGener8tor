@@ -1,5 +1,5 @@
 # TeamGener8tor
-[![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md) ![GitHub last commit](https://img.shields.io/github/last-commit/kbario/TeamGener8tor) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/kbario/TeamGener8tor/Jest) ![GitHub top language](https://img.shields.io/github/languages/top/kbario/TeamGener8tor) ![GitHub language count](https://img.shields.io/github/languages/count/kbario/TeamGener8tor) ![GitHub followers](https://img.shields.io/github/followers/kbario?style=social)
+[![license](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE.md) ![GitHub last commit](https://img.shields.io/github/last-commit/kbario/TeamGener8tor) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/kbario/TeamGener8tor/Jest) ![GitHub top language](https://img.shields.io/github/languages/top/kbario/TeamGener8tor) ![GitHub language count](https://img.shields.io/github/languages/count/kbario/TeamGener8tor) [![GitHub followers](https://img.shields.io/github/followers/kbario?style=social)](https://github.com/kbario)
 
 ## Description
 TeamGener8tor is a CLI application that accepts user inputs and dynamically creates a HTML page from them.
@@ -7,7 +7,7 @@ TeamGener8tor is a CLI application that accepts user inputs and dynamically crea
 Essentially, the user story is that:
 
  - You are a manager of software company and you want to make a visual of all employees (Manager, Engineers, and Interns)
- - You want to input the name, id, email and a fourth variable depending on the employee types (office number, github username, and school for employee types respectively.
+ - You want to input the name, id, email and a fourth variable depending on the employee types (office number, github username, and school for employee types respectively).
  - You want to be able to add one manager, and as many engineers and interns as you wish.
  - Once all employees are enter, a html page is generated for you to visualise.
  - The emails on the html page are links that allow you to email said email and the githubs are links to the engineers profiles.
