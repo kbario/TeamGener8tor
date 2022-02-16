@@ -29,9 +29,9 @@ const questions = [
         //         return 'Only letters are accepted.'
         //     } else { return true}
         // },
-        filter(answers){
-            return answers.name.capitalise().trim()
-        }
+        // filter(answers){
+        //     return answers.name.capitalise().trim()
+        // }
     }, {
         type: 'input',
         name: 'id',
@@ -48,9 +48,9 @@ const questions = [
         //     } 
         //     return true
         // },
-        filter(answers){
-            return parseInt(answers.officeNumber.trim())
-        }
+        // filter(answers){
+        //     return parseInt(answers.officeNumber.trim())
+        // }
     }, {
         type: 'input',
         name: 'email',

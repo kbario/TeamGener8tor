@@ -2,7 +2,7 @@
     // inquirer
 const inquirer = require('inquirer');
     // custom helper
-const { capitalise, validateEmail } = require('./src/teamGenHelper')
+// const { capitalise, validateEmail } = require('./src/teamGenHelper')
 
 // import questions from questions src file
 const { questions, initial } = require('./src/questions')
