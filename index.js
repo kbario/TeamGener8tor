@@ -19,8 +19,8 @@ function asks(question){
         output.push(answers);
         if(answers.role){
             if(answers.role === "No. Finalise Team."){     
-                const myObjs = translateDataToObj(output)
-                console.log(myObjs)
+                // const myObjs = translateDataToObj(output)
+                console.log(output)
                 return 
             } else {
                 questions.unshift(initial)
