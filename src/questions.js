@@ -66,9 +66,9 @@ const questions = [
         //         return 'Not a valid email.'
         //     } else {return true}
         // },
-        filter(answers){
-            return answers.email.trim()
-        }
+        // filter(answers){
+        //     return answers.email.trim()
+        // }
     }, {
         type: 'input',
         name: 'officeNumber',
@@ -83,9 +83,9 @@ const questions = [
         //     } 
         //     return true
         // },
-        filter(answers){
-            return parseInt(answers.officeNumber.trim())
-        }
+        // filter(answers){
+        //     return parseInt(answers.officeNumber.trim())
+        // }
     }, {
         type: 'input',
         name: 'github', 
@@ -102,9 +102,9 @@ const questions = [
         //     }
         //     return true
         // },
-        filter(answers){
-            return answers.github.trim()
-        }
+        // filter(answers){
+        //     return answers.github.trim()
+        // }
     }, {
         type: 'input', 
         name: 'school', 
@@ -121,9 +121,9 @@ const questions = [
         //     }
         //     return true
         // },
-        filter(answers){
-            return answers.name.capitalise().trim()
-        }
+        // filter(answers){
+        //     return answers.name.capitalise().trim()
+        // }
     }
 ];
 

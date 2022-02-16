@@ -1,6 +1,8 @@
 // require all needed packages
     // inquirer
 const inquirer = require('inquirer');
+    // custom processing functions
+const { translateDataToObj } = require('./src/infoProcess') 
     // custom helper
 // const { capitalise, validateEmail } = require('./src/teamGenHelper')
 
@@ -16,9 +18,10 @@ function asks(question){
     .then((answers) => {
         output.push(answers);
         if(answers.role){
-            if(answers.role === "No. Finalise Team."){
-                console.log(output)
-                return
+            if(answers.role === "No. Finalise Team."){     
+                const myObjs = translateDataToObj(output)
+                console.log(myObjs)
+                return 
             } else {
                 questions.unshift(initial)
                 asks(questions);
