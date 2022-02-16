@@ -1,4 +1,4 @@
-const Employee = require('../lib/Employee')
+const Employee = require('../lib/Employee');
 
 describe('Employee', () => {
     describe('Initialisation', () => {
@@ -8,18 +8,18 @@ describe('Employee', () => {
             const employee = new Employee();
             // assert
             expect(employee.getRole()).toEqual('Employee');
-            expect(employee.name).toBeUndefined();
-            expect(employee.id).toBeUndefined();
-            expect(employee.email).toBeUndefined();
+            expect(employee).toHaveProperty('name');
+            expect(employee).toHaveProperty('id');
+            expect(employee).toHaveProperty('email');
         });
         it('Should an instance of the Employee class and the properties should equal that defined in initialisation', () => {
             // arrange
             const employee = new Employee('Kyle', 2, 'kyle@kbar.io');
             // assert
             expect(employee.getRole()).toEqual('Employee');
-            expect(employee.name).toBe('Kyle');
-            expect(employee.id).toBe(2);
-            expect(employee.email).toBe('kyle@kbar.io');
+            expect(employee).toHaveProperty('name', 'Kyle');
+            expect(employee).toHaveProperty('id', 2);
+            expect(employee).toHaveProperty('email', 'kyle@kbar.io');
         })
     });
     describe('getName', () => {

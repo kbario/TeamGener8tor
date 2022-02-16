@@ -8,20 +8,20 @@ describe('Manager', () => {
             const manager = new Manager();
             // assert
             expect(manager.getRole()).toEqual('Manager');
-            expect(manager.name).toBeUndefined();
-            expect(manager.id).toBeUndefined();
-            expect(manager.email).toBeUndefined();
-            expect(manager.officeNumber).toBeUndefined();
+            expect(manager).toHaveProperty('name');
+            expect(manager).toHaveProperty('id');
+            expect(manager).toHaveProperty('email');
+            expect(manager).toHaveProperty('officeNumber');
         });
         it('Should an instance of the Manager class and the properties should equal that defined in initialisation', () => {
             // arrange
             const manager = new Manager('Kyle', 2, 'kyle@kbar.io', 12);
             // assert
             expect(manager.getRole()).toEqual('Manager');
-            expect(manager.name).toBe('Kyle');
-            expect(manager.id).toBe(2);
-            expect(manager.email).toBe('kyle@kbar.io');
-            expect(manager.officeNumber).toBe(12);
+            expect(manager).toHaveProperty('name', 'Kyle');
+            expect(manager).toHaveProperty('id', 2);
+            expect(manager).toHaveProperty('email', 'kyle@kbar.io');
+            expect(manager).toHaveProperty('officeNumber', 12);
         })
     });
     describe('getName', () => {
@@ -57,7 +57,7 @@ describe('Manager', () => {
             const manager = new Manager('Kyle', 2, 'kyle@kbar.io', 12);
             // assert
             expect(manager.getOfficeNumber()).toBe(12);
-            expect(manager.getOfficeNumber()).not.toBe(3);
+            expect(manager.getOfficeNumber()).not.toBe(5);
         });
     });
 });
