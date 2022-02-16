@@ -8,20 +8,20 @@ describe('Engineer', () => {
             const engineer = new Engineer();
             // assert
             expect(engineer.getRole()).toEqual('Engineer');
-            expect(engineer.name).toBeUndefined();
-            expect(engineer.id).toBeUndefined();
-            expect(engineer.email).toBeUndefined();
-            expect(engineer.officeNumber).toBeUndefined();
+            expect(engineer).toHaveProperty('name');
+            expect(engineer).toHaveProperty('id');
+            expect(engineer).toHaveProperty('email');
+            expect(engineer).toHaveProperty('github');
         });
         it('Should an instance of the Engineer class and the properties should equal that defined in initialisation', () => {
             // arrange
             const engineer = new Engineer('Kyle', 2, 'kyle@kbar.io', 'kbario');
             // assert
             expect(engineer.getRole()).toEqual('Engineer');
-            expect(engineer.name).toBe('Kyle');
-            expect(engineer.id).toBe(2);
-            expect(engineer.email).toBe('kyle@kbar.io');
-            expect(engineer.github).toBe('kbario');
+            expect(engineer).toHaveProperty('name', 'Kyle');
+            expect(engineer).toHaveProperty('id', 2);
+            expect(engineer).toHaveProperty('email', 'kyle@kbar.io');
+            expect(engineer).toHaveProperty('github', 'kbario');
         })
     });
     describe('getName', () => {
