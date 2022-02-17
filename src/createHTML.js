@@ -40,7 +40,6 @@ function createHtmlContent(cards) {
 function writeHtml(objs) {
     const cards = createCards(objs);
     const file = createHtmlContent(cards);
-    console.log(file)
     fs.writeFile('./dist/index.html', file, (error) => {error ? console.log('\x1B[0;31mHTML \x1B[1;4;31munsuccessfully\x1B[0;31m saved.\x1B[0m') : console.log('\x1B[0;32mHTML \x1B[1;4;32msuccessfully\x1B[0;32m saved. Find it here: \x1B[1;32m./dist/index.html\x1B[0m')});
 }
 
