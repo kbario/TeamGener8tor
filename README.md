@@ -13,14 +13,13 @@ TeamGener8tor is a CLI application that accepts user inputs about team members i
 
 ![DescriptionIMG](./assets/imgDesc.png)
 
+View the actually html page produced by TeamGener8tor [here](https://kbario.github.io/TeamGener8tor/)
+
 TeamGener8tor is created using JavaScript on the server side with Node.js, the Node.js Inquirer package, and Jest for unit testing.
 
 This project strengthened my skills with classes and extending classes in JavaScript as well as utilising multiple files as custom modules that are ultimately used in the main index.js file.
 
 ## Table of Contents
-- [TeamGener8tor](#teamgener8tor)
-  - [Description](#description)
-  - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
   - [Usage](#usage)
     - [Initialising TeamGener8tor](#initialising-teamgener8tor)
