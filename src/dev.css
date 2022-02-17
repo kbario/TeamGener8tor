@@ -3,7 +3,7 @@
 
 @layer components {
     .card {
-        @apply flex flex-col w-64 h-80
+        @apply flex flex-col w-64 h-80 shadow-md hover:shadow-lg transition-all duration-300
     }
     .card-header {
         @apply p-5 rounded-t-md border-slate-800 border
@@ -15,7 +15,7 @@
         @apply flex flex-col rounded-b bg-blue-100 w-full h-full border border-slate-800
     }
     .card-info-section {
-        @apply flex flex-col grow justify-center px-2 overflow-x-hidden overflow-y-auto
+        @apply flex flex-col grow justify-center px-2 overflow-x-hidden overflow-y-auto transition-all duration-300
     }
     .card-info-section-header {
         @apply text-slate-600 text-sm
@@ -24,7 +24,10 @@
         @apply bg-red-600 text-red-50
     }
     .manager-info {
-        @apply bg-red-200
+        @apply bg-red-200 
+    }
+    .manager-info-section {
+        @apply hover:bg-red-300
     }
     .engineer-header {
         @apply bg-sky-600 text-red-50
@@ -32,14 +35,20 @@
     .engineer-info {
         @apply bg-sky-200 
     }
+    .engineer-info-section {
+        @apply hover:bg-sky-300
+    }
     .intern-header {
         @apply bg-green-600 text-red-50
     }
     .intern-info {
-        @apply bg-green-200
+        @apply bg-green-200 
+    }
+    .intern-info-section {
+        @apply hover:bg-green-300
     }
     .footer-link {
-        @apply hover:text-slate-400
+        @apply hover:text-slate-400 transition-all duration-300
     }
 }
 
