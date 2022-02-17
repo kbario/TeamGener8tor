@@ -6,10 +6,14 @@ const { translateDataToObj } = require('./infoProcess')
 
   const objects = translateDataToObj(answers)
 console.log(objects)
-// function that takes an obj and dynamically inputs info into html element
-function createHtmlCard(){
 
-}
+
+// returns the emoji code
+
+// function that takes an obj and dynamically inputs info into html element
+
+
+
 
 function createHtmlContent() {
     `<!DOCTYPE html>
