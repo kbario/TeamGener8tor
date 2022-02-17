@@ -1,7 +1,7 @@
 module.exports = {
   content: [
-    '.dev.css',
-    '.dev.html'
+    './src/dev.css',
+    './src/dev.html'
   ],
   theme: {
     extend: {},
