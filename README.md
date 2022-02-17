@@ -79,7 +79,7 @@ To contribute to TeamGener8tor, all we ask is that you're empathic and supportiv
     git clone https://github.com/kbario/TeamGener8tor
     node index.js
 
-This project also contains Jest tests and the passing status of these test can be found at the top of this README.
+This project also contains **Jest** tests and the passing status of these test can be found at the top of this README.
 
 ## Questions
 If you have any questions, feel free to contact me through my [GitHub](https://github.com/kbario/) or [Email me](mailto:kylebario1@gmail.com).
