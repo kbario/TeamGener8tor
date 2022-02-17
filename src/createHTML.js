@@ -1,8 +1,4 @@
 const fs = require('fs');
-const Manager = require('../lib/Manager');
-const Engineer = require('../lib/Engineer');
-const Intern = require('../lib/Intern');
-const { translateDataToObj } = require('./infoProcess') 
 
 // function that takes an obj and dynamically inputs info into html element
 function createCards(objs){
