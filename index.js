@@ -1,6 +1,9 @@
 // require all needed packages
     // inquirer
 const inquirer = require('inquirer');
+const Manager = require('./lib/Manager');
+const Engineer = require('./lib/Engineer');
+const Intern = require('./lib/Intern');
     // custom processing functions
 const { translateDataToObj } = require('./src/infoProcess') 
     // custom helper
@@ -19,8 +22,8 @@ function asks(question){
         output.push(answers);
         if(answers.role){
             if(answers.role === "No. Finalise Team."){     
-                // const myObjs = translateDataToObj(output)
-                console.log(output)
+                const myObjs = translateDataToObj(output)
+                
                 return 
             } else {
                 questions.unshift(initial)
@@ -35,3 +38,7 @@ function asks(question){
 
 // run said function
 asks(questions)
+
+
+const obj4 = new Manager('asdf', 'asdf', 'asdf', 'asdf')
+

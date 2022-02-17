@@ -4,42 +4,12 @@ const Engineer = require('../lib/Engineer');
 const Intern = require('../lib/Intern');
 const { translateDataToObj } = require('./infoProcess') 
 
-
-const answers = [
-    { name: 'asdf', id: 'asdf', email: 'asdf', officeNumber: 'asdf' },
-    {
-      role: 'Engineer',
-      name: 'asdf',
-      id: 'asdf',
-      email: 'asdf',
-      github: 'asdf'
-    },
-    {
-      role: 'Engineer',
-      name: 'asdf',
-      id: 'asdf',
-      email: 'asdf',
-      github: 'asdf'
-    },
-    {
-      role: 'Intern',
-      name: 'asdf',
-      id: 'asdf',
-      email: 'asdf',
-      school: 'asdf'
-    },
-    { role: 'No. Finalise Team.' }
-  ];
-
   const objects = translateDataToObj(answers)
 console.log(objects)
 // function that takes an obj and dynamically inputs info into html element
 function createHtmlCard(){
 
 }
-
-const htmlContent = '<html>Whatever</html>';
-
 
 function createHtmlContent() {
     `<!DOCTYPE html>

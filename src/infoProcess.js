@@ -17,8 +17,8 @@ function removeNoFinaliseTeamObj(answers) {
 function addManagerRole(answers){
     return answers.map((obj) => {
         if (!Object.keys(obj).includes('role')){
-            obj.role = 'Manager'
-            return obj
+            const obj1 = Object.assign({role: 'Manager'}, obj)
+            return obj1
         } else { return obj };
     });
 };
@@ -32,11 +32,14 @@ function translateDataToObj(answers){
         if (!keys.includes('role')){
             throw new Error('Object to does not contain a role property');
         } else if (obj['role'] === 'Manager') {
-            return new Manager(obj['name'], obj['id'], obj['email'], obj['officeNumber'])
+            const objNew = new Manager(obj['name'], obj['id'], obj['email'], obj['officeNumber']);
+            return objNew
         } else if (obj['role'] === 'Engineer') {
-            return new Engineer(obj['name'], obj['id'], obj['email'], obj['github'])
+            const objNew = new Engineer(obj['name'], obj['id'], obj['email'], obj['github']);
+            return objNew
         } else if (obj['role'] === 'Intern') {
-            return new Intern(obj['name'], obj['id'], obj['email'], obj['school'])
+            const objNew =  new Intern(obj['name'], obj['id'], obj['email'], obj['school']);
+            return objNew
         }
     });
     return myObjs

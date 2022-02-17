@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "d": "npx tailwindcss -i ./src/dev.css -o ./dist/style.css --watch",
+    "b": "npx tailwindcss -i ./src/dev.css -o ./dist/style.css --minify"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "dependencies": {
     "inquirer": "^8.2.0",
     "jest": "^27.5.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
   }
 }
