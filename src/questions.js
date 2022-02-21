@@ -13,9 +13,9 @@ const questions = [
         name: 'name', 
         message(answers) {
             if (answers.role){
-                return `\x1B[1;32m${answers.role} Information.\x1B[0m What is their:\n\x1B[0;32m?\x1B[0m Name?`
+                return `\x1B[1;32m${answers.role} Information.\x1B[0m What is their:\n\x1B[0;32m?\x1B[1;39m Name?`
             } else {
-                return '\x1B[1;32mManager Information.\x1B[0m What is their:\n\x1B[0;32m?\x1B[0m Name?'
+                return '\x1B[1;32mManager Information.\x1B[0m What is their:\n\x1B[0;32m?\x1B[1;39m Name?'
             }
         },
         when(answers){
